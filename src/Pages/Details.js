@@ -17,6 +17,8 @@ const Details = ({ route, navigation }) => {
         isTopOfTheWeek,
     } = route.params;
 
+    console.log(route.params.name);
+
     return (
         <View
             style={{

@@ -91,7 +91,7 @@ const Home = ({ navigation }) => {
                     alignItems: 'center',
                 }}
                 onPress={() =>
-                    navigation.push('details', {
+                    navigation.navigate('details', {
                         name: data.name,
                         price: data.price,
                         image: data.image,
@@ -100,7 +100,7 @@ const Home = ({ navigation }) => {
                         delivery: data.delivery,
                         ingredients: data.ingredients,
                         isTopOfTheWeek: data.isTopOfTheWeek,
-                        navigation: navigation,
+                        // navigation: navigation,
                     })
                 }>
                 <View
